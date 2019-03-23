@@ -167,7 +167,7 @@ public class _ObjCBinanceApi: NSObject {
     }
 }
 
-@objc public extension _ObjCBinanceApi {
+public extension _ObjCBinanceApi {
     func ping(responseHandler handler: ErrorResponseHandler?) -> Void {
         let request = BinancePingRequest()
         self.send(request, errorResponseHandler: handler)
